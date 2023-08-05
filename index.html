@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ukr" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aakyse | Home Page</title>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav nav">
+        <img class="nav__logo" src="images/nav/logo.gif" alt="logo">
+
+        <div class="nav__elements">
+          <div class="nav__languages">
+            <a class="nav__languages--inactive">EN</a>
+            <p class="nav__languages--slash">&nbsp;/&nbsp;</p>
+            <a class="nav__languages--active">UA</a>
+          </div>
+
+          <a href="#portfolio--ukr" class="nav__link">портфоліо</a>
+
+          <a href="#workshops--ukr" class="nav__link">воркшопи</a>
+        </div>
+
+        <img class="nav__burger" src="images/nav/burger.gif" alt="burger">
+      </nav>
+
+      <img src="images/header/line-top.svg" alt="line-top" class="header__intro-line--1">
+
+      <div class="grid">
+        <div class="
+            grid__item--mobile-1-4
+            grid__item--tablet-1-3
+            grid__item--desktop-1-4"
+        >
+          <h1 class="header__headline">Привіт!</h1>
+    
+          <h2 class="header__description">Мене звати Александра, я українська художниця з Миколаєва. Малюю-кайфую вже більше 12 років, маю мистецьку освіту, працюю ілюстраторкою, проводжу виставки та даю приватні уроки малювання.</h2>
+        </div>
+
+        <div class="
+            grid__item--mobile-1-4
+            grid__item--tablet-5-8
+            grid__item--desktop-6-12"
+        >
+          <div class="container__video">
+            <video 
+              autoplay 
+              loop
+              muted 
+              playsinline 
+              class="header__video"
+            >
+              <source src="./images/header/header__video.mp4">
+            </video>
+          </div>
+        </div>
+
+        <img src="images/header/line-bottom.svg" alt="line-bottom" class="header__intro-line--2">
+      </div>
+    </div>
+  </header>
+
+  <main class="page__main">
+    <div class="events">
+      <div class="container">
+        <div class="events__headline">ПОДІЇ</div>
+  
+        <div class="grid">
+          <div class="
+            grid__item--mobile-1-4
+            grid__item--tablet-1-2
+            grid__item--desktop-1-4"
+          >
+            <div class="events__container">
+              <img class="events__image events__image--1" src="images/events/workshop.png" alt="workshop-1">
+  
+              <img src="images/events/frame.gif" alt="frame" class="events__frame">
+            </div>
+  
+            <h2 class="events__description">Відбулося перше з чотирьох занять курсу для розкриття творчого я.</h2>
+          </div>
+  
+          <div class="
+            grid__item--mobile-1-4
+            grid__item--tablet-4-5
+            grid__item--desktop-5-8"
+          >
+            <div class="events__container">
+              <img class="events__image events__image--2" src="images/events/workshop 2.png" alt="workshop-2">
+  
+              <img src="images/events/frame.gif" alt="frame" class="events__frame">
+             </div>
+  
+             <h2 class="events__description">Перше групове заняття усім дуже сподобавлось! Наступний етап - старт курсу!</h2>
+           </div>
+  
+           <div class="
+            grid__item--mobile-1-4
+            grid__item--tablet-7-8
+            grid__item--desktop-9-12"
+           >
+            <div class="events__container">
+               <img class="events__image events__image--1" src="images/events/Exhibition--3.png" alt="workshop-1">
+  
+               <img src="images/events/frame.gif" alt="frame" class="events__frame">
+             </div>
+  
+             <h2 class="events__description">Моя перша виставка в Берліні, яку я
+              організувала в опен-ейр форматі.</h2>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="contact">
+      <div class="container">
+        <div class="grid">
+          <div class="
+          grid__item--mobile-1-4
+          grid__item--tablet-2-4
+          grid__item--desktop-3-5"
+          >
+            <img class="contact__image" src="images/contact/contact-us-image.gif" alt="contact-us-image">
+          </div>
+
+          <div class="
+              grid__item--mobile-1-4
+              grid__item--tablet-5-7
+              grid__item--desktop-7-10"
+          >
+            <form
+              action="https://formsubmit.co/dmytro.betsan@gmail.com"
+              method="post"
+              autocomplete="off"
+              id="form"
+              class="contact__form"
+            >
+              <label for="name" class="contact__label contact__name">
+                <input
+                type="text"
+                class="contact__input contact__input--name"
+                id="text"
+                placeholder="Ваше ім’я"
+                required
+                >
+              </label>
+
+              <label for="email" class="contact__label contact__email">
+                <input
+                type="email"
+                class="contact__input contact__input--email"
+                id="email"
+                placeholder="E-Mail"
+                required
+                >
+              </label>
+
+              <label for="message" class="contact__label contact__message">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Повідомлення"
+                  autocomplete="off"
+                  class="contact__input contact__input--message"
+                  required
+                ></textarea>
+              </label>
+
+              <button
+                type="submit"
+                class="contact__button"
+              >
+              відправити
+              </button>
+            </form>
+
+            <a href="#" class="contact__return"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid">
+        <div class="
+          grid__item--mobile-1-4
+          grid__item--tablet-2-4
+          grid__item--desktop-2-6"
+        >
+          <p class="footer__description">Давай законектимось в:</p>
+          <a href="https://www.instagram.com/aakyse/" target="_blank" class="footer__link footer__link--instagram">Instagram</a>
+          <a href="https://www.youtube.com/@zussnzauer5824" target="_blank" class="footer__link footer__link--youtube">YouTube</a>
+          <a href="https://www.linkedin.com/in/aleksandra-kyselyova-9274a1239/" target="_blank" class="footer__link footer__link--linkedin">LinkedIn</a>
+        </div>
+
+        <div class="
+          grid__item--mobile-1-4
+          grid__item--tablet-5-7
+          grid__item--desktop-8-11"
+        >
+         <a href="mailto:alexandrakyselyova@gmail.com" class="footer__link footer__link--email">alexandrakyselyova@gmail.com</a>
+
+         <p class="footer__location">Berlin 2023</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
